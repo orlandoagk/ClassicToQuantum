@@ -52,6 +52,6 @@ def cartesiano(x1):
     parteImaginaria = round(x1[0]*math.sin(x1[1]))
     return (parteReal,parteImaginaria)
 
-print(polar((5,2)))
-print(cartesiano((5.385164807134504,0.3805063771123649)))
+#print(polar((5,2)))
+#print(cartesiano((5.385164807134504,0.3805063771123649)))
 #print(division((5,-3),(2,1)))
