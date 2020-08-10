@@ -34,8 +34,8 @@
   **Para sistemas Windows py pruebasoperacioncomplejos.py**
   
   **Uso de la libreria** 
-     1. from operacioncomplejos import * 
-     2. en el archivo py que te interese usarla, leer la documentación para entender el funcionamiento de cada metodo
+      from operacioncomplejos import * 
+     
 
  
    
