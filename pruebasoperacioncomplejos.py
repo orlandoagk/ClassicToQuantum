@@ -24,9 +24,9 @@ class TestComplejos(unittest.TestCase):
         self.assertEqual(operacioncomplejos.division((5,2),(-2,3)),(-4/13,-19/13))
     
     def testModulo(self):
-        self.assertEqual(operacioncomplejos.modulo((3,5)),34**0.5)
-        self.assertEqual(operacioncomplejos.modulo((2,2)),2*2**0.5)
-        self.assertEqual(operacioncomplejos.modulo((2,9)),(85)**0.5)
+        self.assertEqual(operacioncomplejos.modulo((3,5)),round(34**0.5,3))
+        self.assertEqual(operacioncomplejos.modulo((2,2)),round(2*2**0.5,3))
+        self.assertEqual(operacioncomplejos.modulo((2,9)),round((85)**0.5,3))
     
     def testConjugado(self):
         self.assertEqual(operacioncomplejos.conjugado((5,4)),(5,-4))
@@ -34,16 +34,16 @@ class TestComplejos(unittest.TestCase):
         self.assertEqual(operacioncomplejos.conjugado((9,0)),(9,0))
     
     def testPolar(self):
-        self.assertEqual(operacioncomplejos.polar((3,4)),(5.0, 0.9272952180016122))
-        self.assertEqual(operacioncomplejos.polar((7,-10)),(12.206555615733702, -0.960070362405688))
+        self.assertEqual(operacioncomplejos.polar((3,4)),(5.0, 0.927))
+        self.assertEqual(operacioncomplejos.polar((7,-10)),(12.207, -0.96))
     
     def testCartesiano(self):
-        self.assertEqual(operacioncomplejos.cartesiano((5.0, 0.9272952180016122)),(3,4))
+        self.assertEqual(operacioncomplejos.cartesiano((5.0, 0.927)),(3.001,3.999))
         self.assertEqual(operacioncomplejos.cartesiano((12.206555615733702, -0.960070362405688)),(7, -10))
 
     def testArgumentoFase(self):
-        self.assertEqual(operacioncomplejos.argumento((1,-1)),-0.7853981633974483)
-        self.assertEqual(operacioncomplejos.argumento((3,5)),1.0303768265243125)
+        self.assertEqual(operacioncomplejos.argumento((1,-1)),-0.785)
+        self.assertEqual(operacioncomplejos.argumento((3,5)),1.03)
 
 if __name__ == "__main__":
     unittest.main()
