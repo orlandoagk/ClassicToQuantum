@@ -1,4 +1,4 @@
-# Libreria Cuantica (Calculadora de Complejos)
+# Libreria Cuantica
 
 
 ## Descripción
@@ -7,6 +7,7 @@
 
 ## Metodos o funciones soportadas
 
+### Lab1
 1. Suma
 2. Producto
 3. Resta
@@ -15,6 +16,22 @@
 6. Conjugado
 7. Conversión entre representaciones polar y cartesiano
 8. Retornar la fase de un número complejo.
+
+### Lab2
+1. Adición de vectores complejos.
+2. Inverso (aditivo) de un vector complejo.
+3. Multiplicación de un escalar por un vector complejo.
+4. Adición de matrices complejas.
+5. Inversa (aditiva) de una matriz compleja.
+6. Multiplicación de un escalar por una matriz compleja.
+7. Transpuesta de una matriz/vector
+8. Conjugada de una matriz/vector
+9. Adjunta (daga) de una matriz/vector
+10. Producto de dos matrices (de tamaños compatibles)
+11. Función para calcular la "acción" de una matriz sobre un vector.
+12. Producto interno de dos vectores
+13. Norma de un vector
+14. Distancia entre dos vectores
 
 ## Manual de uso 
 
@@ -25,13 +42,17 @@
    
   ### Ejecución
     
-  **Clonar el repositorio**: git clone https://github.com/orlandoagk/libreriacuantica.git
+  **Clonar el repositorio**: `git clone https://github.com/orlandoagk/libreriacuantica.git`
 
   **Ejecutar el archivo pruebas.py**
 
-  **Para sistemas linux:** python3 pruebasoperacioncomplejos.py o ./pruebasoperacioncomplejos.py
+  **Para sistemas linux:** `python3 pruebasoperacioncomplejos.py o ./pruebasoperacioncomplejos.py`
+  `python3 testCalculadoraVectoresMatrices.py o ./testCalculadoraVectoresMatrices.py`
   
-  **Para sistemas Windows py pruebasoperacioncomplejos.py**
+  **Para sistemas Windows**
+
+  `py pruebasoperacioncomplejos.py`
+  `py testCalculadoraVectoresMatrices.py`
   
   **Uso de la libreria** 
       from operacioncomplejos import * 
