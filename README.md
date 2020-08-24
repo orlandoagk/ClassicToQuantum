@@ -3,11 +3,11 @@
 
 ## Descripción
 
-  Esta librería nos servirá para hacer calculos entre números complejos, en esta encontraras las diferentes operaciones que podrás realizar entre ellas ya sea la suma o el argumento de la misma, para encontrar las operaciones revisar la parte de operaciones soportadas
+  Esta librería nos servirá para hacer calculos entre números complejos, vectores y matrices, en esta encontraras las diferentes operaciones que podrás realizar entre ellas ya sea la suma o el argumento de la misma, para encontrar las operaciones revisar la parte de operaciones soportadas, cada uno de estos se les realizo la respectivas pruebas unitarias
 
 ## Metodos o funciones soportadas
 
-### Lab1
+### Lab1(Operaciones con Numeros Complejos)
 1. Suma
 2. Producto
 3. Resta
@@ -17,7 +17,7 @@
 7. Conversión entre representaciones polar y cartesiano
 8. Retornar la fase de un número complejo.
 
-### Lab2
+### Lab2(Operacion con Vectores y Matrices)
 1. Adición de vectores complejos.
 2. Inverso (aditivo) de un vector complejo.
 3. Multiplicación de un escalar por un vector complejo.
@@ -44,18 +44,19 @@
     
   **Clonar el repositorio**: `git clone https://github.com/orlandoagk/libreriacuantica.git`
 
-  **Ejecutar el archivo pruebas.py**
-
-  **Para sistemas linux:** `python3 pruebasoperacioncomplejos.py o ./pruebasoperacioncomplejos.py`
-  `python3 testCalculadoraVectoresMatrices.py o ./testCalculadoraVectoresMatrices.py`
+  **Para sistemas linux:** 
+  - `python3 pruebasoperacioncomplejos.py o ./pruebasoperacioncomplejos.py`
+  - `python3 testCalculadoraVectoresMatrices.py o ./testCalculadoraVectoresMatrices.py`
   
   **Para sistemas Windows**
 
-  `py pruebasoperacioncomplejos.py`
-  `py testCalculadoraVectoresMatrices.py`
+  - `py pruebasoperacioncomplejos.py`
+  - `py testCalculadoraVectoresMatrices.py`
   
   **Uso de la libreria** 
-      from operacioncomplejos import * 
+  - Operaciones con Complejos `from operacioncomplejos import *`
+  - Calculadora de Vectores y Matrices `from calculadoraVectoresMatrices import *`
+
      
 
  
