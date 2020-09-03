@@ -1,7 +1,7 @@
-from unittest import TestCase
+import unittest
 from calculadoraVectoresMatrices import *
 
-class testCalculadora(TestCase):
+class testCalculadora(unittest.TestCase):
     def testSumaVectores(self):
         self.assertEqual(sumaVectores([(3,4),(8,9)],[(19,7),(-4,0)]),[(22, 11), (4, 9)])
         self.assertEqual(sumaVectores([(3,4),(8,9),(-14,0)],[(19,7),(-4,0),(32,-74)]),[(22, 11), (4, 9), (18, -74)])
@@ -57,3 +57,6 @@ class testCalculadora(TestCase):
     
     def testDistanciaDosVectores(self):
         self.assertEqual(distanciaDosVectores([(3,5),(7,4)],[(9,1),(0,74)]),8.062)
+
+if __name__ == '__main__' :
+    unittest.main()
