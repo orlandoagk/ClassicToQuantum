@@ -3,43 +3,15 @@
 
 ## Descripción
 
-  Esta librería nos servirá para hacer calculos entre números complejos, vectores y matrices, en esta encontraras las diferentes operaciones que podrás realizar entre ellas ya sea la suma o el argumento de la misma, para encontrar las operaciones revisar la parte de operaciones soportadas, cada uno de estos se les realizo la respectivas pruebas unitarias
-
-## Metodos o funciones soportadas
-
-### Lab1(Operaciones con Numeros Complejos)
-1. Suma
-2. Producto
-3. Resta
-4. División
-5. Módulo
-6. Conjugado
-7. Conversión entre representaciones polar y cartesiano
-8. Retornar la fase de un número complejo.
-
-### Lab2(Operacion con Vectores y Matrices)
-1. Adición de vectores complejos.
-2. Inverso (aditivo) de un vector complejo.
-3. Multiplicación de un escalar por un vector complejo.
-4. Adición de matrices complejas.
-5. Inversa (aditiva) de una matriz compleja.
-6. Multiplicación de un escalar por una matriz compleja.
-7. Transpuesta de una matriz/vector
-8. Conjugada de una matriz/vector
-9. Adjunta (daga) de una matriz/vector
-10. Producto de dos matrices (de tamaños compatibles)
-11. Función para calcular la "acción" de una matriz sobre un vector.
-12. Producto interno de dos vectores
-13. Norma de un vector
-14. Distancia entre dos vectores
+Esta mini librería nos permitirá recrear varios experimentos que fueron puestos como trabajos en estos describimos la teoría básica cuantica, observables y medidas.
 
 ## Manual de uso 
 
   ### Requerimientos
-  
+  ```
     1. python version 3.7.4 o superior
     2. Se hace uso de Unitest
-   
+  ```
   ### Ejecución
     
   **Clonar el repositorio**: `git clone https://github.com/orlandoagk/libreriacuantica.git`
@@ -54,8 +26,7 @@
   - `py testCalculadoraVectoresMatrices.py`
   
   **Uso de la libreria** 
-  - Operaciones con Complejos `from operacioncomplejos import *`
-  - Calculadora de Vectores y Matrices `from calculadoraVectoresMatrices import *`
+  - Operaciones con Complejos `from classicToQuantom import *`
 
      
 
