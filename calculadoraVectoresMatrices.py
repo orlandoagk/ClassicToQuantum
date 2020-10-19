@@ -138,3 +138,25 @@ def restaVectores(vectorA,vectorB):
 
 def distanciaDosVectores(vectorA,vectorB):
     return normaVector(restaVectores(vectorA,vectorB))
+
+def matrizIdentidad(M):
+
+    identidad = [[(0,0) for i in range(len(M))] for j in range(len(M))]
+    for i in range(len(M)):
+        for j in range(len(M)):
+            if (i==j):
+                identidad[i][j]=(1,0)
+            else:
+                identidad[i][j]=(0,0)
+    return identidad
+
+def restaMatrices(M,N):
+    
+    
+    if (len(M) != len(N)):
+        raise Exception("Las dimensiones de las matrices deben ser iguales")
+    else:
+        rta = []
+        for i in range(len(M)):
+            rta.append(restaVectores(M[i],N[i]))
+    return rta
