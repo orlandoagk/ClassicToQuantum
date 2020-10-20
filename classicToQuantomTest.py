@@ -1,7 +1,7 @@
 import unittest, classicToQuantom as cq ,calculadoraVectoresMatrices as lib, math as m
 
 class TestClassicToQuantum(unittest.TestCase):
-    def testdeberiacalcprobabilidad(self):
+    def testDeberiaCalcularLaProbabilidad(self):
         self.assertEqual(cq.observableProbabilidadMatriz((
             [(2,1),
             (-1,2),
@@ -28,17 +28,17 @@ class TestClassicToQuantum(unittest.TestCase):
 
 
                                
-    def testdeberiacalcamplitudtransicion(self):
+    def testDeberiaCalcularLaAmplitudDeTransicion(self):
         self.assertEqual(cq.amplitudDeTransicion([(-1,-4),(2,-3),(-7,6),(-1,1),(-5,-3),(5,0),(5,8),(4,-4),(8,-7),(2,-7)],
                                [(2,1),(-1,2),(0,1),(1,0),(3,-1),(2,0),(0,-2),(-2,1),(1,-3),(0,-1)]),(-0.021,-0.13))
 
-    def testdeberiacalcmedia(self):
+    def testDeberiaCalcularLaMedia(self):
         self.assertEqual(cq.media([[(1,0),(0,-1)],
                 [(0,1),(2,0)]],
                 [[(m.sqrt(2)/2,0)],
                 [(0,m.sqrt(2)/2)]]),2.5)
 
-    def testdeberiacalcvarianza(self):
+    def testDeberiaCalcularLaVarianza(self):
         self.assertEqual(cq.varianza([[(1,0),(0,-1)],
                 [(0,1),(2,0)]],
                 [[(m.sqrt(2)/2,0)],
@@ -51,15 +51,13 @@ class TestClassicToQuantum(unittest.TestCase):
         estado1 = [(0,1),(1,0)]
         estado2 = [(0,-1),(1,0)]
 
-        print("Probabilidad de transicion a 1 :: "+ str(cq.probabilidadDeTransicion(initialState,estado1)))
-        print("Probabilidad de transicion a 2 :: "+ str(cq.probabilidadDeTransicion(initialState,estado2)))
+        print("Probabilidad de transicion en 1: "+ str(cq.probabilidadDeTransicion(initialState,estado1)))
+        print("Probabilidad de transicion en 2: "+ str(cq.probabilidadDeTransicion(initialState,estado2)))
 
 
 
         
-    def testEjercicio_4_4_2(self):
-        print("")
-        print("----Ejercicio 4.4.2----")
+    def testEjercicio4x4x2(self):
 
         matrizAdyacencia = [[(0,0),(1/m.sqrt(2),0),(1/m.sqrt(2),0),(0,0)],
                             [(0,1/m.sqrt(2)),(0,0),(0,0),(1/m.sqrt(2),0)],
